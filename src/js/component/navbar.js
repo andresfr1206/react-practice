@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logoRAM from "../../img/logoRAM.png";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-light bg-light mb-3">
+		<nav className="navbar navbar-light bg-warning mb-3">
+			<div className="w-25">
 			<Link to="/">
-				<span className="navbar-brand mb-0 h1">React Boilerplate</span>
+			<img className="img-fluid" src={logoRAM}/>
 			</Link>
+			</div>
 			<div className="ml-auto">
 				<Link to="/demo">
-					<button className="btn btn-primary">Check the Context in action</button>
+					<button className="btn btn-primary">Favorites</button>
 				</Link>
 			</div>
 		</nav>
